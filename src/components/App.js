@@ -5,12 +5,12 @@ import {UserProvider} from "../context/user"
 
 function App() {
   const [theme, setTheme] = useState("dark");
-  const [user, setUser] = useState(null);
+ 
   return (
     <main className={theme}>
       <UserProvider>
-      <Header theme={theme} setTheme={setTheme} user={user} setUser={setUser} />
-      <Profile theme={theme} user={user} />
+      <Header theme={theme} setTheme={setTheme}  />
+      <Profile theme={theme}  />
       </UserProvider>
     </main>
   );
