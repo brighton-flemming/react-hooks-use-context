@@ -6,4 +6,4 @@ function UserProvider ({children}) {
     return <UserContext.Provider value={null}>{children}</UserContext.Provider>
 }
 
-export default {UserContext, UserProvider}
+export  { UserContext, UserProvider}
